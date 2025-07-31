@@ -1292,8 +1292,7 @@ export default function MenuPage() {
                         <h3 className={`text-lg font-bold mb-2 ${
                           theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
                         }`}>
-                          <h3>Chateau Ksara Rosé (Bottle)</h3>
-                          <p><br /></p>
+                          Chateau Ksara Rosé (Bottle)
                         </h3>
                         <div className="flex justify-center mt-auto pt-4">
                           <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
