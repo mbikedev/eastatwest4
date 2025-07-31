@@ -887,7 +887,7 @@ export default function MenuPage() {
                 <div>
                   {/* Beers Section */}
                   <div className="text-center mb-5 font-semibold text-2xl">
-                    <p>Beers</p>
+                    <p>BEERS</p>
                   </div>
                   <div className="flex flex-col mb-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
