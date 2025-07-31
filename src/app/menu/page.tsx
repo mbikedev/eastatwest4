@@ -1190,7 +1190,7 @@ export default function MenuPage() {
                             <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
                               theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
                             }`}>
-                              <p>36€</p>
+                              36€
                             </span>
                           </div>
                         </div>
