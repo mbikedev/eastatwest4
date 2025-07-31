@@ -1213,7 +1213,7 @@ export default function MenuPage() {
                           <h3 className={`text-lg font-bold mb-2 ${
                             theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
                           }`}>
-                            <h3>Chateau Ksara</h3>
+                            Chateau Ksara
                           </h3>
                           <div className={`text-sm mb-4 leading-relaxed flex-grow ${
                             theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
@@ -1776,7 +1776,7 @@ export default function MenuPage() {
                       ? 'bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA] text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/60'
                       : 'bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/30 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/30'
                   }`}>
-                    <span className="block sm:inline">👨‍🍳 Chef&apos;s Special Menus 👨‍🍳</span>
+                    <span className="block sm:inline">👨‍🍳 Chef&apos;s Special Menus ��‍🍳</span>
                   </h2>
                 </div>
               )}
