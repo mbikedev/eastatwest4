@@ -952,7 +952,7 @@ export default function MenuPage() {
                           className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
                             theme === "dark"
                               ? "bg-gray-900"
-                              : "bg-white"
+                              : "bg-black"
                           }`}
                         >
                           <div className="flex justify-center mb-4">
