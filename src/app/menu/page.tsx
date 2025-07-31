@@ -1251,7 +1251,7 @@ export default function MenuPage() {
                         <h3 className={`text-lg font-bold mb-2 ${
                           theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
                         }`}>
-                          <h3>Chateau Kefraya</h3>
+                          Chateau Kefraya
                         </h3>
                         <div className={`text-sm mb-4 leading-relaxed flex-grow ${
                           theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
