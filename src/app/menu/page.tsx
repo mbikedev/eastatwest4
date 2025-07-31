@@ -1019,7 +1019,7 @@ export default function MenuPage() {
                             Leffe brown beer / Lindemans Kriek
                           </h3>
                           <div className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
                           }`}>
                             Belgian brown ale / Cherry beer
                           </div>
