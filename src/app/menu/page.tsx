@@ -784,7 +784,7 @@ export default function MenuPage() {
                       ? 'bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50'
                       : 'bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40'
                   }`}>
-                    🌶️ Hot & Spicy 🌶️
+                    🌶️ Hot & Spicy 🌶��
                   </h2>
                 </div>
               )}
@@ -1182,7 +1182,7 @@ export default function MenuPage() {
                             Chateau Ksara
                           </h3>
                           <div className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
                           }`}>
                             <p>Blanc de Blanc bottle</p>
                           </div>
