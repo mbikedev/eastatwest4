@@ -869,7 +869,7 @@ export default function MenuPage() {
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                   <h2 className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${
                     theme === 'dark' 
-                      ? 'bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70' 
+                      ? 'bg-gray-900' 
                       : 'bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80'
                   }`}>
                     🍹 Refreshing Beverages 🍹
