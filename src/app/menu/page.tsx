@@ -951,7 +951,7 @@ export default function MenuPage() {
                             Belgian wheat beer
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
-                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white border border-white ${
                               theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
                             }`}>
                               4.50€
