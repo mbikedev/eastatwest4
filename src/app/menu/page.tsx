@@ -882,19 +882,205 @@ export default function MenuPage() {
                 </div>
               )}
               
-              {/* Universal card layout for all categories */}
-              <div className={`gap-6 relative ${
-                // Special layouts for categories with last-2-items-span-full-width requirement
-                (activeCategory === 'coldMezzes' || activeCategory === 'hotMezzes' || activeCategory === 'lunchDishes')
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6' // Use 6-column grid for flexible spanning
-                  : activeCategory === 'skewers'
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2' // Skewers: 2 items side by side
-                  : activeCategory === 'desserts'
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2' // Desserts: 2 columns, 2 rows
-                  : activeCategory === 'sandwiches'
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' // Sandwiches: default with last item full width
-                  : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' // Default: 3 columns
-              } ${theme === 'dark' ? 'shadow-2xl shadow-white/10' : ''}`}>
+              {/* Special layout for drinks category */}
+              {activeCategory === 'drinks' ? (
+                <div>
+                  {/* Beers Section */}
+                  <div className="text-center mb-5 font-semibold text-2xl">
+                    <p>Beers</p>
+                  </div>
+                  <div className="flex flex-col mb-5">
+                    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                      <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9b5ac6ab7d3748b498a36e199b1e3709?format=webp"
+                                alt="Lebanese beer"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Lebanese beer
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Traditional Lebanese beer
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              4.50€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7"
+                                alt="Hoegaarden white beer"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Hoegaarden white beer
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Belgian wheat beer
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              4.50€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Hot Drinks */}
+                  <div className="text-center mb-5 font-semibold text-2xl">
+                    <p>Hot Drinks</p>
+                  </div>
+                  <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative">
+                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                    }`}>
+                      <div className="flex justify-center mb-4">
+                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <Image
+                            src="/images/placeholder.svg"
+                            alt="Arabian Coffee"
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover transition-transform duration-300"
+                          />
+                        </div>
+                      </div>
+                      <h3 className={`text-lg font-bold mb-2 ${
+                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                      }`}>
+                        Arabian Coffee
+                      </h3>
+                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                      }`}>
+                        Traditional Arabic coffee
+                      </div>
+                      <div className="flex justify-center mt-auto pt-4">
+                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                        }`}>
+                          3.50€
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                    }`}>
+                      <div className="flex justify-center mb-4">
+                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <Image
+                            src="/images/placeholder.svg"
+                            alt="Café Espresso"
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover transition-transform duration-300"
+                          />
+                        </div>
+                      </div>
+                      <h3 className={`text-lg font-bold mb-2 ${
+                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                      }`}>
+                        Café Espresso
+                      </h3>
+                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                      }`}>
+                        Coffee / Espresso
+                      </div>
+                      <div className="flex justify-center mt-auto pt-4">
+                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                        }`}>
+                          3.25€
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                    }`}>
+                      <div className="flex justify-center mb-4">
+                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <Image
+                            src="/images/placeholder.svg"
+                            alt="Tea"
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover transition-transform duration-300"
+                          />
+                        </div>
+                      </div>
+                      <h3 className={`text-lg font-bold mb-2 ${
+                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                      }`}>
+                        Tea
+                      </h3>
+                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                      }`}>
+                        Hot tea varieties
+                      </div>
+                      <div className="flex justify-center mt-auto pt-4">
+                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                        }`}>
+                          3.25€
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                // Universal card layout for all other categories
+                <div className={`gap-6 relative ${
+                  // Special layouts for categories with last-2-items-span-full-width requirement
+                  (activeCategory === 'coldMezzes' || activeCategory === 'hotMezzes' || activeCategory === 'lunchDishes')
+                    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6' // Use 6-column grid for flexible spanning
+                    : activeCategory === 'skewers'
+                    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2' // Skewers: 2 items side by side
+                    : activeCategory === 'desserts'
+                    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2' // Desserts: 2 columns, 2 rows
+                    : activeCategory === 'sandwiches'
+                    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' // Sandwiches: default with last item full width
+                    : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' // Default: 3 columns
+                } ${theme === 'dark' ? 'shadow-2xl shadow-white/10' : ''}`}>
                 {/* Enhanced background for each section */}
                 <div className={`absolute inset-0 -m-8 rounded-2xl ${
                   activeCategory === 'coldMezzes'
@@ -934,7 +1120,7 @@ export default function MenuPage() {
                       : 'bg-gradient-to-br from-gray-50/90 to-gray-100/30'
                 } backdrop-blur-sm -z-10 ${theme === 'dark' ? 'shadow-xl shadow-white/5' : ''}`} />
 
-                {menuItems[activeCategory]?.map((item, index) => {
+                {activeCategory !== 'drinks' && menuItems[activeCategory]?.map((item, index) => {
                   const totalItems = menuItems[activeCategory]?.length || 0;
                   const isLastTwo = index >= totalItems - 2;
                   const isLastItem = index === totalItems - 1;
@@ -1082,7 +1268,8 @@ export default function MenuPage() {
                     </div>
                   );
                 })}
-              </div>
+                </div>
+              )}
 
             </div>
           ) : (
