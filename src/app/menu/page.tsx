@@ -962,109 +962,196 @@ export default function MenuPage() {
                     </div>
                   </div>
 
-                  {/* Hot Drinks */}
-                  <div className="text-center mb-5 font-semibold text-2xl">
-                    <p>Hot Drinks</p>
+                  <div className="flex flex-col mb-5 pb-5">
+                    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                      <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fb03af9e1892647cd8115ffe77722a869"
+                                alt="Jupiler"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Jupiler
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Traditional Arabic coffee
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              3.50€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F59548c417ee04e21ad2bff463252e713"
+                                alt="Leffe brown beer / Lindemans Kriek"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Leffe brown beer / Lindemans Kriek
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Belgian brown ale / Cherry beer
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              4.50€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative">
-                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                    }`}>
-                      <div className="flex justify-center mb-4">
-                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
-                          <Image
-                            src="/images/placeholder.svg"
-                            alt="Arabian Coffee"
-                            width={96}
-                            height={96}
-                            className="w-full h-full object-cover transition-transform duration-300"
-                          />
-                        </div>
-                      </div>
-                      <h3 className={`text-lg font-bold mb-2 ${
-                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                      }`}>
-                        Arabian Coffee
-                      </h3>
-                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
-                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
-                      }`}>
-                        Traditional Arabic coffee
-                      </div>
-                      <div className="flex justify-center mt-auto pt-4">
-                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
-                        }`}>
-                          3.50€
-                        </span>
-                      </div>
-                    </div>
 
-                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                    }`}>
-                      <div className="flex justify-center mb-4">
-                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
-                          <Image
-                            src="/images/placeholder.svg"
-                            alt="Café Espresso"
-                            width={96}
-                            height={96}
-                            className="w-full h-full object-cover transition-transform duration-300"
-                          />
-                        </div>
-                      </div>
-                      <h3 className={`text-lg font-bold mb-2 ${
-                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                      }`}>
-                        Café Espresso
-                      </h3>
-                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
-                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
-                      }`}>
-                        Coffee / Espresso
-                      </div>
-                      <div className="flex justify-center mt-auto pt-4">
-                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
-                        }`}>
-                          3.25€
-                        </span>
-                      </div>
-                    </div>
+                  {/* Wines Section */}
+                  <div className="text-center mb-5 font-semibold text-2xl">
+                    <p>WINES</p>
+                  </div>
 
-                    <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                      theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                    }`}>
-                      <div className="flex justify-center mb-4">
-                        <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
-                          <Image
-                            src="/images/placeholder.svg"
-                            alt="Tea"
-                            width={96}
-                            height={96}
-                            className="w-full h-full object-cover transition-transform duration-300"
-                          />
+                  {/* Red Wines */}
+                  <div className="text-center mb-5 font-semibold text-xl">
+                    <p>RED WINE</p>
+                  </div>
+                  <div className="flex flex-col mb-5">
+                    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                      <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b"
+                                alt="Chateau Ksara"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Chateau Ksara
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Le prieuré glass| bottle
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              6€ | 29€
+                            </span>
+                          </div>
                         </div>
                       </div>
-                      <h3 className={`text-lg font-bold mb-2 ${
-                        theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                      }`}>
-                        Tea
-                      </h3>
-                      <div className={`text-sm mb-4 leading-relaxed flex-grow ${
-                        theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
-                      }`}>
-                        Hot tea varieties
-                      </div>
-                      <div className="flex justify-center mt-auto pt-4">
-                        <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                          theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                      <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
                         }`}>
-                          3.25€
-                        </span>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b"
+                                alt="Chateau Ksara"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Chateau Ksara
+                          </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                          }`}>
+                            Reserve du couvent bottle
+                          </div>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              33€
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+
+                  <div className="flex flex-col min-h-[100px] p-5">
+                    <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
+                      <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
+                        theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                      }`}>
+                        <div className="flex justify-center mb-4">
+                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <Image
+                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F22c5aa78ee434a1a99a81f7140a61ef1"
+                              alt="Chateau Kefraya"
+                              width={96}
+                              height={96}
+                              className="w-full h-full object-cover transition-transform duration-300"
+                            />
+                          </div>
+                        </div>
+                        <h3 className={`text-lg font-bold mb-2 ${
+                          theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                        }`}>
+                          Chateau Kefraya
+                        </h3>
+                        <div className={`text-sm mb-4 leading-relaxed flex-grow ${
+                          theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                        }`}>
+                          Bretéche bottle
+                        </div>
+                        <div className="flex justify-center mt-auto pt-4">
+                          <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                            theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                          }`}>
+                            36€
+                          </span>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
               ) : (
