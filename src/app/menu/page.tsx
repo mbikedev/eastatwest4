@@ -1023,14 +1023,35 @@ export default function MenuPage() {
                           }`}
                         >
                           <div className="flex justify-center mb-4">
-                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <div
+                              className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                              onClick={() => openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7",
+                                t('menu.drinks.hoegaardenBeer.title')
+                              )}
+                            >
                               <Image
                                 src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7"
-                                alt="Hoegaarden white beer"
+                                alt={t('menu.drinks.hoegaardenBeer.title')}
                                 width={96}
                                 height={96}
-                                className="w-full h-full object-cover transition-transform duration-300"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                               />
+                              {/* Hover Overlay */}
+                              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className={`p-2 rounded-full ${
+                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
+                                  <svg
+                                    className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                  </svg>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <h3
@@ -1038,14 +1059,14 @@ export default function MenuPage() {
                               theme === "dark" ? "text-white" : "text-[#1A1A1A]"
                             }`}
                           >
-                            Hoegaarden white beer
+                            {t('menu.drinks.hoegaardenBeer.title')}
                           </h3>
                           <div
                             className={`text-sm mb-4 leading-relaxed flex-grow ${
                               theme === "dark" ? "text-white" : "text-[#1A1A1A]"
                             }`}
                           >
-                            Belgian wheat beer
+                            {t('menu.drinks.hoegaardenBeer.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
@@ -1055,7 +1076,7 @@ export default function MenuPage() {
                                   : "bg-[#252927] text-white"
                               }`}
                             >
-                              4.50€
+                              {t('menu.drinks.hoegaardenBeer.price')}
                             </span>
                           </div>
                         </div>
