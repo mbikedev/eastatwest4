@@ -2530,7 +2530,7 @@ export default function MenuPage() {
               className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${
                 theme === "dark"
                   ? "bg-white text-[#1A1A1A] hover:bg-white/90 focus:ring-white/30"
-                  : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90 focus:ring-[#A8D5BA]/30"
+                  : "bg-[rgba(163,178,170,1)] text-white hover:bg-[rgba(163,178,170,0.9)] focus:ring-[rgba(163,178,170,0.3)]"
               }`}
             >
               {t("nav.reservations")}
