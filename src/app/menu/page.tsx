@@ -1148,7 +1148,7 @@ export default function MenuPage() {
                                   : "bg-[#252927] text-white"
                               }`}
                             >
-                              3.50€
+                              {t('menu.drinks.jupilerBeer.price')}
                             </span>
                           </div>
                         </div>
