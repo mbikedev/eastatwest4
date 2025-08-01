@@ -1844,6 +1844,111 @@ export default function MenuPage() {
                       </div>
                     </section>
                   </div>
+
+                  {/* Hot Drinks Section */}
+                  <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
+                    <p>HOT DRINKS</p>
+                  </div>
+
+                  <div className="flex flex-col relative mt-5">
+                    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                      <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fd5e955f5cef54a22ab0376690f1e0594?format=webp"
+                                alt="Café Espresso"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            <p>Arabian Coffee</p>
+                          </h3>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              3.50€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
+                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
+                          <div className="flex justify-center mb-4">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                              <Image
+                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3c8b8b2812ef455abca20a0c78d6fcf7?format=webp"
+                                alt="Café Espresso"
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+                          <h3 className={`text-lg font-bold mb-2 ${
+                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
+                            Café Espresso
+                          </h3>
+                          <div className="flex justify-center mt-auto pt-4">
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
+                              3.25€
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col min-h-[100px] p-5">
+                    <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
+                      <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
+                        theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                      }`}>
+                        <div className="flex justify-center mb-4">
+                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <Image
+                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4fd7c3b5ba4142aa8b60056a2f879e03?format=webp"
+                              alt="Café Espresso"
+                              width={96}
+                              height={96}
+                              className="w-full h-full object-cover transition-transform duration-300"
+                            />
+                          </div>
+                        </div>
+                        <h3 className={`text-lg font-bold mb-2 ${
+                          theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                        }`}>
+                          <p>
+                            <a href="https://eastatwest.com/menu/#" rel="noopener noreferrer" target="_blank" style={{fontSize: '16px'}}>
+                              Tea (mint tea I black tea I chamomile)
+                            </a>
+                          </p>
+                          <p><br /></p>
+                        </h3>
+                        <div className="flex justify-center mt-auto pt-4">
+                          <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
+                            theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                          }`}>
+                            3.25€
+                          </span>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
                 </div>
               ) : (
                 // Universal card layout for all other categories
