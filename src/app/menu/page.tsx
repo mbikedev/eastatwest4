@@ -930,7 +930,7 @@ export default function MenuPage() {
                   </h2>
                   <p
                     className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${
-                      theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+                      theme === "dark" ? "text-white" : "text-[#1A1A1A]"
                     }`}
                   >
                     Traditional and modern drinks to complement your meal
