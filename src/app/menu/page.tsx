@@ -1009,7 +1009,7 @@ export default function MenuPage() {
                                   : "bg-[#252927] text-white"
                               }`}
                             >
-                              4.50€
+                              {t('menu.drinks.lebaneseBeer.price')}
                             </span>
                           </div>
                         </div>
