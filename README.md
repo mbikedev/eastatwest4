@@ -161,6 +161,18 @@ The website is fully responsive with breakpoints:
 - **Tablet**: 640px - 1024px
 - **Desktop**: > 1024px
 
+## ⚡ Performance Optimizations
+
+Key techniques to boost site performance:
+- Advanced image compression and responsive sizing
+- Critical CSS inlined with deferred non-critical styles
+- Eliminated render-blocking resources
+- Targeted modern JS builds to drop legacy polyfills
+- Dynamic imports and code splitting to remove unused code
+- LCP-focused tweaks like animation removal and font preloading
+
+See [PERFORMANCE_OPTIMIZATIONS.md](PERFORMANCE_OPTIMIZATIONS.md) for details.
+
 ## 🔧 Available Scripts
 
 ```bash
@@ -207,9 +219,3 @@ For support or questions, please contact:
 ---
 
 **East at West** - Where East meets West in every bite! 🍽️
-=======
-# resteast
-restaurant app
->>>>>>> ae519e4123bf4c70866caad8df896ac419369840
-# eastatwest4
-# eastatwest4
